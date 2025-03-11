@@ -12,10 +12,12 @@ header{
     width:1140px;
     max-width: 80%;
     margin:auto;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: start;
+    position: relative;
+    z-index: 1000;
 }
 header a{
     text-decoration: none;
@@ -27,5 +29,5 @@ header a{
     width:100vw;
     height: 100vh;
     overflow: hidden;
-    margin-top: -50px;
+    margin-top: -60px;
 }
