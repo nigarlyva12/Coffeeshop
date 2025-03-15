@@ -281,7 +281,7 @@ header a{
 .time{
     width: 0%;
     height: 5px;
-    background-color: #fff;
+    background-color: #e94e4e;
     position: absolute;
     z-index: 1000;
     top:0;
