@@ -9,6 +9,7 @@ body{
     color: #fff;
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 header{
     max-width: 100%;
@@ -319,3 +320,128 @@ header a:hover{
 }
 
 
+/*----------Subscribe.html-----------*/
+.subscribe-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+.subscribe-section .logo-holder{
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-section .logo-holder img{
+   padding: 40px;
+   width: 70%;
+}
+.subscribe-section .subscribe{
+    width:70%;
+    height: 90vh;
+    background-color: #eee;
+    padding: 20px;
+    box-shadow: 0 5px 10px #0004;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-section .subscribe .subscribe-holder{
+    display: block;
+    margin-top: 100px;
+    height: 100%;
+    width:25%;
+    transition: all 0.4s;
+}.subscribe-section .subscribe .login-holder{
+    display: none;
+    margin-top: 100px;
+    height: 100%;
+    width:25%;
+    transition: all 0.4s;
+}
+.subscribe-section .subscribe  .subscribe-holder h1, 
+.subscribe-section .subscribe .login-holder h1{
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+.subscribe-section .subscribe  .subscribe-holder p,
+.subscribe-section .subscribe .login-holder p{
+    font-size: 0.9em;
+    color: #878787;
+    margin-bottom: 20px;
+}
+.subscribe-section .subscribe  .subscribe-holder .name-holder{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.subscribe-section .subscribe  .subscribe-holder .name-holder input,
+.subscribe-section .subscribe .login-holder input{
+    width: 100%;
+    padding: 9px 15px;
+    border: 1px solid #c7c5c5;
+    border-radius: 5px;
+    transition: all 0.3s;
+}   
+.subscribe-section .subscribe  .subscribe-holder .name-holder input::placeholder,
+.subscribe-section .subscribe .login-holder input::placeholder{
+    color: #878787;
+}
+.subscribe-section .subscribe  .subscribe-holder .name-holder input:focus,
+.subscribe-section .subscribe .login-holder input:focus{
+    outline: none;
+    border: 1px solid #e94e4e;
+}
+.subscribe-section .subscribe  .subscribe-holder form input,
+.subscribe-section .subscribe .login-holder form input{
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #c7c5c5;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.subscribe-section .subscribe  .subscribe-holder form input::placeholder,
+.subscribe-section .subscribe .login-holder form input::placeholder{
+    color: #878787;
+}
+.subscribe-section .subscribe  .subscribe-holder form input:focus,
+.subscribe-section .subscribe .login-holder form input:focus{
+    outline: none;
+    border: 1px solid #e94e4e;
+}
+.subscribe-section .subscribe  .subscribe-holder form input[type="submit"],
+.subscribe-section .subscribe .login-holder form input[type="submit"]{
+    background-color: #e94e4e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: none;
+}
+.subscribe-section .subscribe .subscribe-holder form input[type="submit"]:hover,
+.subscribe-section .subscribe .login-holder form input[type="submit"]:hover{
+    background-color: #fc7373;
+    color: white;
+}
+.subscribe-section .subscribe .sign-toggler{
+    position:absolute;
+    top:10%;
+    left: 56%;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+.subscribe-section .subscribe .sign-toggler p{
+    color: #213294;
+    display: inline;
+    font-size: 1.1em;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+}

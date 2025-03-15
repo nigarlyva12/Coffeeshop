@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo" width="70"  style="margin-left: 50px; cursor:pointer"/>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="menu.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+
+        <section class="subscribe-section">
+            
+            <div class="logo-holder">
+                <img src="images/logo.png" alt="logo"/>
+            </div>
+            <div class="subscribe">
+                <div class="sign-toggler">
+                    <p id="login-toggler">Login  </p>
+                    <span style="color: black;">/</span>
+                    <p id="subscribe-toggler">Sign Up</p>
+                </div>
+                <div class="subscribe-holder">
+                    <h1>Sign Up</h1>
+                    <p>Join us to stay updated about our products.</p>
+                    <form action="">
+                        <div class="name-holder">
+                            <input type="text" placeholder="First Name"/>
+                            <input type="text" placeholder="Last Name"/>
+                        </div>
+                        <input type="date" placeholder="Date of Birth"/><br>
+                        <input type="email" placeholder="Email"/>
+                        <input type="password" placeholder="Password"/>
+                        <input type="password" placeholder="Confirm Password"/><br>
+                        <input type="submit" value="Sign Up"/>
+                    </form>
+                </div>
+                <div class="login-holder">
+                  <h1>Login</h1>
+                  <p>Welcome back!</p>
+                  <form action="">
+                      <input type="email" placeholder="Email"/>
+                      <input type="password" placeholder="Password"/>
+                      <input type="submit" value="Login"/>
+                  </form>
+              </div>
+            </div>
+        </section>
+
+        <footer>                    
+            <div class="footer-social">
+              <a href="https://www.facebook.com" target="_blank"
+                ><img src="images/facebook.png" alt="facebook"
+              /></a>
+              <a href="https://www.twitter.com" target="_blank"
+                ><img src="images/twitter.png" alt="twitter"
+              /></a>
+              <a href="https://www.instagram.com" target="_blank"
+                ><img src="images/instagram.png" alt="instagram"
+              /></a>
+            </div>
+          </footer>
+
+          <script src="toggle.js"></script>
+</body>
+</html>
