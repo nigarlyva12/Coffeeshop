@@ -8,22 +8,30 @@ body{
     background-color: #000;
     color: #fff;
     height: 100vh;
+    width: 100%;
 }
 header{
-    width:1140px;
-    max-width: 80%;
+    max-width: 100%;
     margin:auto;
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between ;
     position: relative;
     z-index: 1000;
+    background-color: #000;
+    width: 100%;
+    padding: 0 50px;
 }
 header a{
     text-decoration: none;
     color: #eee;
     margin-right: 40px;
+    padding: 10px 20px;
+    transition: all 0.5s;
+}
+header a:hover{
+    background-color: #e94e4e;
 }
 
 .carousel{
@@ -75,8 +83,6 @@ header a{
     color: #eee;
     padding:10px;
     width: 70%;
-    background-color: #000;
-    opacity: 0.8;
     text-shadow: 0 5px 10px #0004;
 }
 .carousel .list .item .content .buttons{
@@ -91,6 +97,11 @@ header a{
     background-color: #eee;
     letter-spacing: 2px;
     font-weight: 500;
+    cursor:pointer; 
+}
+.carousel .list .item .content button a{
+    text-decoration: none;
+    color: #eee;
 }
 .carousel .list .item .content button:nth-child(2){
     background-color: transparent ;
@@ -306,3 +317,5 @@ header a{
         font-size: 30px;
     }
 }
+
+
