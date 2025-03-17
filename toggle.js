@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let subscribeHolder = document.querySelector(".subscribe-holder");
     let loginHolder = document.querySelector(".login-holder");
 
-    subscribeHolder.style.display = "block"; // Show Sign Up by default
-    loginHolder.style.display = "none"; // Hide Login by default
+    subscribeHolder.style.display = "block"; 
+    loginHolder.style.display = "none"; 
 
     loginToggle.addEventListener("click", function () {
-        console.log("Login Clicked"); // Debugging step
+        console.log("Login Clicked");
         if (window.getComputedStyle(loginHolder).display === "none") {
             loginHolder.style.display = "block";
             subscribeHolder.style.display = "none";
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     subscribeToggle.addEventListener("click", function () {
-        console.log("Sign Up Clicked"); // Debugging step
+        console.log("Sign Up Clicked");
         if (window.getComputedStyle(subscribeHolder).display === "none") {
             subscribeHolder.style.display = "block";
             loginHolder.style.display = "none";

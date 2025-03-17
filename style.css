@@ -7,9 +7,9 @@
 body{
     background-color: #000;
     color: #fff;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 header{
     max-width: 100%;
@@ -17,12 +17,13 @@ header{
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between ;
+    justify-content: space-around ;
     position: relative;
     z-index: 1000;
     background-color: #000;
     width: 100%;
     padding: 0 50px;
+
 }
 header a{
     text-decoration: none;
@@ -31,10 +32,19 @@ header a{
     padding: 10px 20px;
     transition: all 0.5s;
 }
+header #active{
+    background: transparent;
+    border:1px solid #e94e4e;
+    border-radius: 20px;
+    color: #e94e4e;
+}
 header a:hover{
     background-color: #e94e4e;
 }
-
+header #active:hover{
+    background-color: #e94e4e;
+    color:#eee
+}
 .carousel{
     width:100vw;
     height: 100vh;
@@ -155,8 +165,8 @@ header a:hover{
 
 .carousel .arrows{
     position: absolute;
-    top: 80%;
-    left:26%;
+    top: 90%;
+    left:22%;
     width: 300px;
     max-width: 30%;
     display: flex;
@@ -325,12 +335,11 @@ header a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    overflow: visible;
     width: 100%;
 }
 .subscribe-section .logo-holder{
     width: 30%;
-    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,7 +350,7 @@ header a:hover{
 }
 .subscribe-section .subscribe{
     width:70%;
-    height: 90vh;
+ 
     background-color: #eee;
     padding: 20px;
     box-shadow: 0 5px 10px #0004;
@@ -352,15 +361,13 @@ header a:hover{
 }
 .subscribe-section .subscribe .subscribe-holder{
     display: block;
-    margin-top: 100px;
-    height: 100%;
-    width:25%;
+    margin-top: 70px; 
+    width:35%;
     transition: all 0.4s;
 }.subscribe-section .subscribe .login-holder{
     display: none;
-    margin-top: 100px;
-    height: 100%;
-    width:25%;
+    margin-top: 70px;
+    width:35%;
     transition: all 0.4s;
 }
 .subscribe-section .subscribe  .subscribe-holder h1, 
@@ -423,6 +430,7 @@ header a:hover{
     cursor: pointer;
     transition: all 0.3s;
     border: none;
+    margin-bottom: 50px;
 }
 .subscribe-section .subscribe .subscribe-holder form input[type="submit"]:hover,
 .subscribe-section .subscribe .login-holder form input[type="submit"]:hover{
@@ -444,4 +452,9 @@ header a:hover{
     text-decoration: underline;
     font-style: italic;
     cursor: pointer;
+}
+
+
+footer{
+    height:10vh;
 }
